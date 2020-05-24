@@ -1,13 +1,13 @@
 .header {
 	position: relative;
-	width: 100%;
+	width: 1400px;
+	margin: 20px auto;
 	background: #fff;
-	top: 0;
-	left: 0;
 	height: $header-height;
 	z-index: map-get($layer, "header");
 
 	> .inner {
+		width: 1100px;
 	}
 }
 
@@ -33,10 +33,9 @@
 }
 
 .header-nav {
-
-	@include mq("sp") {
-		display: none;
-	}
+	display: flex;
+	font-size: 1.6rem;
+	font-weight: bold;
 
 	ul {
 		display: flex;
@@ -44,11 +43,9 @@
 	}
 
 	li {
-		margin-right: 46px;
-
-		&:last-child {
-			margin-right: 0;
-		}
+		margin-right: 33px;
+		padding-right: 33px;
+		border-right: solid 1px #000;
 
 		> a {
 			text-decoration: none;
@@ -61,12 +58,7 @@
 			}
 		}
 	}
-}
-
-.header-drawer {
-	display: none;
-
-	@include mq("sp") {
-		display: block;
+	li:last-of-type {
+		border-right: none;
 	}
 }

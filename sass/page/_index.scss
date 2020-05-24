@@ -1,0 +1,153 @@
+a {
+	&:hover {
+		opacity: $opacity;
+		transition: 0.5s;
+	}
+}
+
+.mv {
+	width: $layout-width-canvas;
+	margin: 0 auto;
+	.mv__description {
+		position: relative;
+		&--btn {
+			top: 440px;
+			left: 563px;
+			position: absolute;
+		}
+	}
+}
+
+.content {
+	margin: 85px auto 0;
+	width: 1400px;
+
+	.main__construction {
+		position: relative;
+		&--btn {
+			top: 252px;
+			left: 455px;
+			position: absolute;
+		}
+	}
+	.main__block1 {
+		margin-top: 36px;
+		display: flex;
+	}
+	.main__box {
+		border: solid 1px #ccc;
+	}
+	.main__text {
+		padding: 24px 20px;
+
+		&--title {
+			font-size: 1.4rem;
+			font-weight: bold;
+			a {
+				text-decoration: none;
+				position: relative;
+			}
+			a:after {
+				position: absolute;
+				top: 3px;
+				right: -14px;
+				content: "";
+				border-top: 5px solid transparent;
+				border-bottom: 5px solid transparent;
+				border-left: 5px solid #b22132;
+			}
+		}
+
+		&--description {
+			font-size: 1.4rem;
+		}
+	}
+	.main__facility {
+		margin-right: 37px;
+		width: 720px;
+	}
+	.main__cm {
+		width: 343px;
+	}
+
+	.main__detail {
+		display: flex;
+	}
+
+	.main__block2 {
+		margin-top: 36px;
+		display: flex;
+	}
+
+	.main__adoption {
+		margin-right: 34px;
+		width: 343px;
+	}
+	.main__individual {
+		width: 343px;
+		margin-right: 37px;
+	}
+
+	.main__news {
+		width: 720px;
+		margin-top: 35px;
+		position: relative;
+
+		&--title {
+			font-size: 1.8rem;
+		}
+
+		&--link {
+			font-size: 1.2rem;
+			position: absolute;
+			top: 0;
+			right: 37px;
+			border: 1px;
+			border: solid 1px #ccc;
+
+			a {
+				width: 97px;
+				padding: 5px;
+				margin: auto;
+				display: inline-block;
+				text-decoration: none;
+				position: relative;
+				text-align: center;
+			}
+			a:after {
+				position: absolute;
+				right: 10px;
+				top: 9px;
+				content: "";
+				border-top: 5px solid transparent;
+				border-bottom: 5px solid transparent;
+				border-left: 5px solid #b22132;
+			}
+		}
+
+		&--detail {
+			margin-top: 24px;
+			border-top: solid 1px #e5e5e5;
+		}
+
+		&--list {
+			display: flex;
+			padding: 20px 18px;
+			border-bottom: solid 1px #e5e5e5;
+			font-size: 1.4rem;
+		}
+
+		&--day {
+			width: 110px;
+			margin-right: 14px;
+		}
+		&--text {
+			width: 560px;
+		}
+	}
+
+	.main__facebook {
+		margin: 35px 0 0 0;
+		width: 343px;
+	}
+}
